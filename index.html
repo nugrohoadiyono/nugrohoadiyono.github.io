@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hati-hati ada hantu!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+
+    <meta property="og:image" content="https://agiftidea.com/wp-content/uploads/2020/04/birthday-celebration.jpeg">
+    <meta property="og:description" content="Ada apa ya di sini?">
+    <meta property="og:title" content="Ada apa nih?">
+    <link rel="shortcut icon"
+        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepngclipart.com%2Fpng%2F59487-pusheen-cat-to-birthday-cake-you-happy%2Ficon&psig=AOvVaw0bWRa0bG0O_AuP8yL-zIpB&ust=1612178376623000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCnw82Gxu4CFQAAAAAdAAAAABAF">
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #18191c;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+            background-image: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 40px auto;
+        }
+
+        .envelopemessage {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-closed {
+            display: block;
+            cursor: pointer;
+        }
+
+        .letter-opened {
+            display: none;
+
+        }
+
+        .rtanny {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/SpartaIcon7.gif");
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100px;
+            border: 5px solid white;
+            margin: 75px auto 20px auto;
+            box-shadow: 0px 0px 10px 0px white;
+            cursor: pointer;
+        }
+
+        .congratulations {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .messagebox {
+            background-color: #f0d5d5;
+            border-radius: 10px 10px 10px 10px;
+            width: 400px;
+            margin: 8px auto 50px auto;
+            padding: 22px;
+        }
+
+        img.fotoAyu {
+            display: block;
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .ucapanwowo {
+            margin: 15px auto 15px auto;
+            text-align: justify;
+        }
+
+        img.fotowowo{
+            width: 50%;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto 10px auto;
+        }
+
+        .ucapandisty {
+            margin: 15px auto 15px auto;
+            text-align: justify;
+        }
+
+        img.fotoadisty {
+            width: 60%;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto 10px auto;
+        }
+
+        .ucapan {
+            padding: 10px 20px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .envelope {
+                width: 150px;
+                height: 150px;
+                margin: 180px auto 40px auto;
+            }
+
+            .envelopemessage {
+                font-size: 18px;
+            }
+
+            .messagebox {
+                width: 290px;
+                padding: 18px;
+                font-size: 15px;
+
+            }
+
+            .congratulations {
+                font-size: 22px;
+            }
+
+            .rtanny {
+                width: 140px;
+                height: 140px;
+                margin: 30px auto 20px auto;
+            }
+
+
+        }
+    </style>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-closed")[0].style.display = 'none';
+            document.getElementsByClassName("letter-opened")[0].style.display = 'block';
+        }
+        function on_click_rtanny() {
+            alert('Hayo mau ke mana? (Pencet OK ya)');
+            window.location.href = "https://www.youtube.com/watch?v=gsMdSS1qwXE";
+        }
+
+    </script>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/confetti.js"></script>
+</head>
+
+<body>
+    <div class="letter-closed" onclick="open_letter()">
+        <div class="envelope"> </div>
+        <h2 class="envelopemessage">Pencet suratnya ya!<br><span style="font-size:13px;">Lebih baik dibuka di
+                laptop</span></h2>
+    </div>
+    <div class="letter-opened">
+        <div class="rtanny" onclick="on_click_rtanny()"></div>
+        <h1 class="congratulations">Selamat ulang tahun Ayu!<br><span style="font-size: 10px;">Coba pencet gambar di
+                atas ^</span></h1>
+
+        <div class="messagebox">
+            <div style="text-align: center; font-size: 15px;"> <img src="images/ayu1.JPG" class="fotoAyu" />Apa Kata Temen Ayu?</div>
+
+            <div class="ucapan">
+
+                <div class="ucapanwowo">
+                    <hr>
+                    <img class="fotowowo" src="images/wowo1.JPG">
+                    <p>Ayuu, happy birthday ya! Semoga di umur ke-20 ini selalu sehat, selalu lancar urusan-urusan ke depannya.
+                        Semoga keinginan-keinginan lu dikabulkan sama Allah Swt. yu. Semoga bahagia terus. Jangan lupa jaga kesehatan Yu,
+                        semangat terus buat kuliahnya! Gue doain lu sukses akademik, perjodohan, pertemanan, dan lain-lain. Semoga kita cepat
+                        bertemu ya yu kangen pisan. Sehat terus, sukses selalu bebs!<br><br>Love,<br>Wowo
+                    </p> 
+                </div>
+    
+                <p class="ucapanjehi">Happy birthday to you, blablabla. blabalbala <br><br> Princess, <br>
+                    Jehi</p>
+    
+                <div class="ucapandisty">
+                    <hr>
+                    <img class="fotoadisty" src="images/adisty1.jpg">
+                    <p class="kataadisty">Selamat ulang tahun yang ke-20 Ayuuuuu. Semoga diumurnya yang sekarang ini
+                        hidupnya semakin berkah, segala urusannya dilancarkan, keinginannya tercapai, dan yang paling
+                        penting selalu bahagia. Gua selalu doain lu bahagia yu, karena ketika lu bahagia pasti semuanya
+                        bakal lebih mudah dijalanin. Pokoknya sehat terus eakkk supaya bisa ketemu sama raisa cabang
+                        jatinangor xixixixi
+                        <br><br>
+                        Love,<br>
+                        distysyantik❤️
+                    </p>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
